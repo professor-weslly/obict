@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OBICT - Portal do Estudante</title>
+    <title>Portal OBICT - 3ª Edição</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -24,7 +24,7 @@
 
         header {
             background-color: var(--white);
-            padding: 25px;
+            padding: 20px;
             text-align: center;
             border-bottom: 5px solid var(--primary-blue);
             box-shadow: var(--shadow);
@@ -36,6 +36,7 @@
             padding: 0 20px;
         }
 
+        /* Card Principal de Acesso */
         .hero-section {
             background: var(--white);
             padding: 40px;
@@ -49,114 +50,128 @@
             display: inline-block;
             background-color: var(--primary-blue);
             color: white;
-            padding: 20px 40px;
-            font-size: 1.3rem;
+            padding: 18px 35px;
+            font-size: 1.25rem;
             font-weight: bold;
             text-decoration: none;
-            border-radius: 10px;
+            border-radius: 8px;
             transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 69, 128, 0.3);
         }
 
         .btn-prova:hover {
             background-color: var(--secondary-blue);
-            transform: scale(1.02);
+            transform: translateY(-2px);
         }
 
+        /* Títulos das Seções */
         h2.titulo-turno {
             color: var(--primary-blue);
             border-left: 6px solid var(--secondary-blue);
             padding-left: 15px;
             margin: 40px 0 20px;
             font-size: 1.6rem;
+            text-transform: uppercase;
         }
 
-        /* Grid de Turmas */
+        /* Grid de Botões das Turmas */
         .grid-turmas {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 12px;
         }
 
         .btn-turma {
             background-color: var(--white);
             color: var(--primary-blue);
-            padding: 15px;
+            padding: 15px 10px;
             text-decoration: none;
             border-radius: 8px;
             font-weight: 600;
             text-align: center;
             border: 1px solid #ddd;
             transition: all 0.2s;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.03);
+            font-size: 0.95rem;
         }
 
         .btn-turma:hover {
             background-color: var(--primary-blue);
             color: white;
             border-color: var(--primary-blue);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         footer {
             text-align: center;
-            padding: 40px;
-            color: #777;
+            padding: 50px 20px;
+            color: #666;
             font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        .logo-parana {
+            height: 50px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>OBICT - 3ª Edição</h1>
+        <h1 style="margin:0; font-size: 1.8rem; color: var(--primary-blue);">OBICT - Olimpíada de Inovação</h1>
     </header>
 
     <div class="container">
         <div class="hero-section">
-            <h2 style="margin-top:0">Plataforma de Provas</h2>
-            <p>Clique abaixo para acessar o sistema com seu token de acesso.</p>
+            <h2 style="margin-top:0; color: var(--primary-blue);">Plataforma de Provas</h2>
+            <p style="color: #555; font-size: 1.1rem; margin-bottom: 25px;">Clique no botão abaixo para entrar com seu <b>Token de Acesso</b>.</p>
             <a href="https://olimpico.eduspace.com.br/web/public/users/educational_tokens/sessions/new" target="_blank" class="btn-prova">
-                ENTRAR NA PROVA
+                ENTRAR NA PROVA (USAR TOKEN)
             </a>
         </div>
 
         <h2 class="titulo-turno">🌞 Turno: Manhã</h2>
         <div class="grid-turmas">
-            <a href="LINK_9A" target="_blank" class="btn-turma">9º Ano A</a>
-            <a href="LINK_9B" target="_blank" class="btn-turma">9º Ano B</a>
-            <a href="LINK_1A" target="_blank" class="btn-turma">1ª Série A</a>
-            <a href="LINK_1B" target="_blank" class="btn-turma">1ª Série B</a>
-            <a href="LINK_1C" target="_blank" class="btn-turma">1ª Série C</a>
-            <a href="LINK_1D" target="_blank" class="btn-turma">1ª Série D</a>
-            <a href="LINK_2A" target="_blank" class="btn-turma">2ª Série A</a>
-            <a href="LINK_2B" target="_blank" class="btn-turma">2ª Série B</a>
-            <a href="LINK_2C" target="_blank" class="btn-turma">2ª Série C</a>
-            <a href="LINK_2D" target="_blank" class="btn-turma">2ª Série D</a>
-            <a href="LINK_3A" target="_blank" class="btn-turma">3ª Série A</a>
-            <a href="LINK_3B" target="_blank" class="btn-turma">3ª Série B</a>
-            <a href="LINK_3C" target="_blank" class="btn-turma">3ª Série C</a>
-            <a href="LINK_3D" target="_blank" class="btn-turma">3ª Série D</a>
+            <a href="#" class="btn-turma">9º Ano A</a>
+            <a href="#" class="btn-turma">9º Ano B</a>
+
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHLeGF94ghEebpMQw65A9z4tIKwx4kri2Z3pDrHR2pWr3Ev9sxp_oZcasIFS7Mrkv_WCb3nP_rGq2s/pubhtml?gid=1931613646&single=true" target="_blank" class="btn-turma">1ª Série A</a>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHLeGF94ghEebpMQw65A9z4tIKwx4kri2Z3pDrHR2pWr3Ev9sxp_oZcasIFS7Mrkv_WCb3nP_rGq2s/pubhtml?gid=1951544897&single=true" target="_blank" class="btn-turma">1ª Série B</a>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHLeGF94ghEebpMQw65A9z4tIKwx4kri2Z3pDrHR2pWr3Ev9sxp_oZcasIFS7Mrkv_WCb3nP_rGq2s/pubhtml?gid=1303230945&single=true" target="_blank" class="btn-turma">1ª Série C</a>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHLeGF94ghEebpMQw65A9z4tIKwx4kri2Z3pDrHR2pWr3Ev9sxp_oZcasIFS7Mrkv_WCb3nP_rGq2s/pubhtml?gid=974458430&single=true" target="_blank" class="btn-turma">1ª Série D</a>
+
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHLeGF94ghEebpMQw65A9z4tIKwx4kri2Z3pDrHR2pWr3Ev9sxp_oZcasIFS7Mrkv_WCb3nP_rGq2s/pubhtml?gid=653748316&single=true" target="_blank" class="btn-turma">2ª Série A</a>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHLeGF94ghEebpMQw65A9z4tIKwx4kri2Z3pDrHR2pWr3Ev9sxp_oZcasIFS7Mrkv_WCb3nP_rGq2s/pubhtml?gid=1677447185&single=true" target="_blank" class="btn-turma">2ª Série B</a>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHLeGF94ghEebpMQw65A9z4tIKwx4kri2Z3pDrHR2pWr3Ev9sxp_oZcasIFS7Mrkv_WCb3nP_rGq2s/pubhtml?gid=1481130534&single=true" target="_blank" class="btn-turma">2ª Série C</a>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHLeGF94ghEebpMQw65A9z4tIKwx4kri2Z3pDrHR2pWr3Ev9sxp_oZcasIFS7Mrkv_WCb3nP_rGq2s/pubhtml?gid=596561022&single=true" target="_blank" class="btn-turma">2ª Série D</a>
+
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHLeGF94ghEebpMQw65A9z4tIKwx4kri2Z3pDrHR2pWr3Ev9sxp_oZcasIFS7Mrkv_WCb3nP_rGq2s/pubhtml?gid=2020017854&single=true" target="_blank" class="btn-turma">3ª Série A</a>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHLeGF94ghEebpMQw65A9z4tIKwx4kri2Z3pDrHR2pWr3Ev9sxp_oZcasIFS7Mrkv_WCb3nP_rGq2s/pubhtml?gid=237194588&single=true" target="_blank" class="btn-turma">3ª Série B</a>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHLeGF94ghEebpMQw65A9z4tIKwx4kri2Z3pDrHR2pWr3Ev9sxp_oZcasIFS7Mrkv_WCb3nP_rGq2s/pubhtml?gid=1055954697&single=true" target="_blank" class="btn-turma">3ª Série C</a>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHLeGF94ghEebpMQw65A9z4tIKwx4kri2Z3pDrHR2pWr3Ev9sxp_oZcasIFS7Mrkv_WCb3nP_rGq2s/pubhtml?gid=1315736521&single=true" target="_blank" class="btn-turma">3ª Série D</a>
         </div>
 
         <h2 class="titulo-turno">🌇 Turno: Tarde</h2>
         <div class="grid-turmas">
-            <a href="LINK_6A" target="_blank" class="btn-turma">6º Ano A</a>
-            <a href="LINK_6B" target="_blank" class="btn-turma">6º Ano B</a>
-            <a href="LINK_6C" target="_blank" class="btn-turma">6º Ano C</a>
-            <a href="LINK_7A" target="_blank" class="btn-turma">7º Ano A</a>
-            <a href="LINK_7B" target="_blank" class="btn-turma">7º Ano B</a>
-            <a href="LINK_7C" target="_blank" class="btn-turma">7º Ano C</a>
-            <a href="LINK_8A" target="_blank" class="btn-turma">8º Ano A</a>
-            <a href="LINK_8B" target="_blank" class="btn-turma">8º Ano B</a>
-            <a href="LINK_8C" target="_blank" class="btn-turma">8º Ano C</a>
-            <a href="LINK_8D" target="_blank" class="btn-turma">8º Ano D</a>
-            <a href="LINK_9C" target="_blank" class="btn-turma">9º Ano C</a>
-            <a href="LINK_9D" target="_blank" class="btn-turma">9º Ano D</a>
+            <a href="#" class="btn-turma">6º Ano A</a>
+            <a href="#" class="btn-turma">6º Ano B</a>
+            <a href="#" class="btn-turma">6º Ano C</a>
+            <a href="#" class="btn-turma">7º Ano A</a>
+            <a href="#" class="btn-turma">7º Ano B</a>
+            <a href="#" class="btn-turma">7º Ano C</a>
+            <a href="#" class="btn-turma">8º Ano A</a>
+            <a href="#" class="btn-turma">8º Ano B</a>
+            <a href="#" class="btn-turma">8º Ano C</a>
+            <a href="#" class="btn-turma">8º Ano D</a>
+            <a href="#" class="btn-turma">9º Ano C</a>
+            <a href="#" class="btn-turma">9º Ano D</a>
         </div>
     </div>
 
     <footer>
-        Secretaria de Estado da Educação do Paraná<br>
-        Organização: Professor Weslly Franco
+        CCM Júlio Mesquita<br>
+        <strong>Organização: Professor Weslly Franco</strong><br>
+        Olimpíada Brasileira de Inovação, Ciência e Tecnologia - OBICT 2026
     </footer>
 
 </body>
